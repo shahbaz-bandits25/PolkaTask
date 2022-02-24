@@ -61,7 +61,7 @@ contract Database is Ownable, IDB {
     }
 
 
-    function payBridgeFee() external {
+    function payBridgeFee(address _tokenAddress) external {
         if(bridgeCount >= 5)
         {
             address sender = msg.sender;
