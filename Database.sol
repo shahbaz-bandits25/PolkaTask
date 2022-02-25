@@ -70,7 +70,8 @@ contract Database is Ownable, IDB {
         }
         else
         {
-             
+            isFeePaid[msg.sender][_tokenAddress] = true; 
+            emit FeePaid(msg.sender, bridgeFee);    
             bridgeCount++;
         }
     }
