@@ -76,8 +76,8 @@ contract Database is Ownable, IDB {
         }
     }
 
-    function setBridgeFee(uint256 _bridgeFee ,uint _feeTokenDecimals) public onlyOwner {
-        _bridgeFee = _bridgeFee * 10**_feeTokenDecimals;
+    function setBridgeFee(uint256 _bridgeFee ) public onlyOwner {
+       
         bridgeFee = _bridgeFee;
     }
 
